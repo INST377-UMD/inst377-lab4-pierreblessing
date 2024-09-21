@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INST377 - Lab 4</title>
+    <style>
+        body {
+            background-color: orange;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .left, .right {
+            width: 45%; 
+        }
+
+        .section {
+            border: 2px solid rgb(248, 245, 248);
+            padding: 20px;
+            margin-bottom: 20px;
+            background-color: rgb(84, 154, 191);
+            color: white;
+            border-radius: 5px;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center; 
+            align-items: center; 
+            text-align: center;
+        }
+
+        .alert-section {
+            width: 850px;  
+            height: 20px; 
+        }
+
+        .text-tester-section {
+            width: 850px;  
+            height: 20px; 
+        }
+
+        .change-color-section {
+            width: 600px; 
+            height: 10px;
+        }
+
+        .add-text-section {
+            width: 600px;  
+            height: 10px; 
+        }
+
+        button {
+            padding: 10px;
+            background-color: rgb(206, 199, 199);
+            color: rgb(2, 2, 2);
+            border: round;
+        }
+
+        input[type="text"] {
+            padding: 5px;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1 id="heading">INST377 - Lab 4</h1>
+
+    <div class="container">
+        <div class="left">
+
+            <div class="section alert-section">
+                <form id="alertMeForm">
+                    <label for="nameInput">Name:</label>
+                    <input type="text" id="nameInput" required>
+                    <button type="submit">Alert Me!</button>
+                </form>
+            </div>
+
+            <div class="section text-tester-section">
+                <form id="textTesterForm">
+                    <label for="textInput">Text Tester:</label>
+                    <input type="text" id="textInput" required>
+                    <button type="submit">Validate Text</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="right">
+            <div class="section change-color-section">
+                <button id="changeColor">Change Color</button>
+            </div>
+
+            <div class="section add-text-section">
+                <button id="addText">Add Text</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="lab4.2.js"></script>
+</body>
+</html>
